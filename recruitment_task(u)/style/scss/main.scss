@@ -1,0 +1,40 @@
+@import './header';
+@import './variables/colors';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 810px;
+    padding: 0 16.5%;
+    background-image: url(../../sources/main_page_bg.png);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__title{
+        font-size: $h1;
+        text-align: right;
+        line-height: $h1;
+        color: $font-light;
+    }
+
+    &__text{
+        margin-top: 15%;
+        color: $font-light;
+        font-weight: 600;
+        text-align: right;
+        font-size: $semi-small;
+    }
+}
