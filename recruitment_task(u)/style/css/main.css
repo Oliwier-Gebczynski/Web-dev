@@ -104,6 +104,7 @@
 .articles {
   position: absolute;
   display: flex;
+  justify-content: center;
   height: 300px;
   padding: 0 16.5%;
   top: 660px;
@@ -113,14 +114,54 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 33.3%;
   padding: 3%;
-  background-color: #e10024;
   color: #ffffff;
 }
 
+.article--first {
+  background-image: url(../../sources/article1.png);
+  background-size: cover;
+}
+
+.article--first::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#d50000, rgba(213, 0, 0, 0.9));
+  width: 100%;
+  height: 100%;
+}
+
+.article--second {
+  background-image: url(../../sources/article2.png);
+  background-size: cover;
+}
+
+.article--second::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#a90000, rgba(169, 0, 0, 0.9));
+  width: 100%;
+  height: 100%;
+}
+
 .article--black {
-  background-color: #343536;
+  background-image: url(../../sources/article3.png);
+  background-size: cover;
+}
+
+.article--black::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#0d0d0d, rgba(13, 13, 13, 0.9));
+  width: 100%;
+  height: 100%;
 }
 
 .article__date {
@@ -168,5 +209,9 @@
 .article__button--logoDark {
   background-color: #e10024;
   padding: 9%;
+}
+
+.article__date, .article__title, .article__text {
+  z-index: 10;
 }
 /*# sourceMappingURL=main.css.map */
