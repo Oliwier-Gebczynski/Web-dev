@@ -1,0 +1,26 @@
+@import '../variables/colors', '../variables/fonts';
+
+.main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 810px;
+    padding: 0 16.5%;
+    background-image: url(../../sources/main_bg1.png);
+
+    &__title{
+        color: $font-light;
+        font-size: $h1;
+        text-align: right;
+        line-height: $h1;
+    }
+
+    &__text{
+        margin-top: 15%;
+        text-align: right;
+        color: $font-light;
+        font-size: $semi-small;
+        font-weight: 600;
+    }
+}
